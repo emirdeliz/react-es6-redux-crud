@@ -1,0 +1,203 @@
+$green: #4aba58;
+$white: #f1f4f9;
+
+$grey: #375d80;
+$grey-light: #e2e8ee;
+$grey-darker: $grey;
+
+$blue: #94cff9;
+$blue-light: #d6e9fc;
+
+@font-face {
+    font-family: "proximanova-regular";
+    src: url("../webfonts/proximanova-regular.woff");
+}
+
+@font-face {
+    font-family: "proximanovacond-regular";
+    src: url("../webfonts/proximanovacond-regular.woff");
+}
+
+html * {
+    font-family: proximanova-regular !important;
+
+    body {
+        background-color: $white;
+
+        > div {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+body {
+    font-size: 1rem
+}
+/*
+
+.header {
+    margin: auto;
+    width: 70%;
+    height: 50px;
+    background: #2687e9;
+}
+
+.main-page {
+    margin: 15px auto;
+    width: 60%;
+    display: table;
+
+    .content {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .container-pagination {
+        width: 900px;
+        text-align: center;
+    }
+
+    .button {
+        font-weight: bold;
+    }
+
+    .button-normal {
+        padding: 20px 35px;
+    }
+}
+
+.table {
+    line-height: 25px;
+    border: solid 1px $grey-light;
+    border-radius: 5px;
+
+    .selected td {
+        border-top: solid 1px $blue;
+        border-bottom: solid 1px $blue;
+        background-color: $blue-light;
+    }
+
+    td {
+        color: $grey;
+        background-color: #fff;
+    }
+}
+
+.search-box {
+    float: right;
+    border-radius: 3px;
+
+    .button-zoom {
+        background-color: $white;
+        width: 40px !important;
+        height: 40px;
+
+        .zoom {
+            content: url("../imgs/zoom.png");
+            width: 12px;
+        }
+    }
+
+    .input {
+        width: 150px;
+        height: 40px;
+    }
+}
+
+.container-button {
+    float: right;
+}
+
+.required {
+    padding-left: 15px;
+    background-image: url("../imgs/asterisk.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.pagination {
+    display: inline-block;
+    margin-top: 10px;
+
+    div {
+        font-size: 13px;
+        color: #365c7f;
+        border: 1px solid $grey-light;
+        background-color: #fff;
+        float:left;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    div:hover {
+        background-color: #fffbea;
+    }
+
+    div:first-child {
+        background-image: url("../imgs/left-chevron.png");
+        border-radius: 3px 0px 0px 3px
+    }
+
+    div:last-child {
+        background-image: url("../imgs/right-chevron.png");
+        border-radius: 0px 3px 3px 0px;
+    }
+
+    div:first-child,
+    div:last-child {
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-position: center;
+    }
+
+    .selected-page {
+        border: solid 1px $blue;
+        background-color: $blue-light;
+    }
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.checkbox {
+    background-color: #fff;
+    border: 1px solid #c8d3de;
+    border-radius: 3px;
+    float: left;
+    padding: 1px;
+
+    input[type=checkbox]:checked ~ div label {
+        background: url("../imgs/ok.png");
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    label {
+        height: 17px;
+        width: 17px;
+        display: block;
+    }
+
+    label.checked {
+        background: url("../imgs/ok.png");
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+*/
+
+@import "../../screens/body/assets/scss/style.scss";
+@import "../../screens/header/assets/scss/style.scss";
+@import "../../screens/footer/assets/scss/style.scss";
+
+@import "../../shared/pagination/assets/scss/style.scss";
+@import "../../shared/checkbox/assets/scss/style.scss";
+
+@import "../../../node_modules/bulma/bulma.sass";
