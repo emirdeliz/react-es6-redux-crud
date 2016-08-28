@@ -2,7 +2,4 @@ language: node_js
 node_js:
     - "node"
 
-before_script:
-  - npm install -g jest-cli
-
 script: npm run test
