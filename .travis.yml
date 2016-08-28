@@ -1,9 +1,8 @@
 language: node_js
 node_js:
     - "node"
-    - "6.1"
 
 before_script:
-  - npm install -g react-native
+  - npm install -g jest-cli
 
 script: npm run test

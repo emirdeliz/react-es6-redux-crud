@@ -56,7 +56,7 @@ export default {
        }),
        new HtmlWebpackPlugin({
            inject: 'body',
-           title: 'react-es6-jest-enzyme',
+           title: 'react-es6-redux-crud',
            templateContent: '<form class="main-page"></form>'
        })
     ]

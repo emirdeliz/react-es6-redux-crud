@@ -1,7 +1,7 @@
 {
-  "name": "react-es6-jest-enzyme",
+  "name": "react-es6-redux-crud",
   "version": "1.0.0",
-  "description": "react-es6-jest-enzyme",
+  "description": "react-es6-redux-crud",
   "main": "lib/index.js",
   "scripts": {
     "start": "babel-node -- ./node_modules/.bin/webpack-dev-server --content-base build",
@@ -16,7 +16,7 @@
     "url": "https://github.com/emirdeliz/meus-projetos.git"
   },
   "keywords": [
-    "react-es6-jest-enzyme"
+    "react-es6-redux-crud"
   ],
   "author": "<emir.liz> emirdeliz@gmail.com",
   "license": "MIT",
