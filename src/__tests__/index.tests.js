@@ -1,59 +1,7 @@
-//jest.dontMock('../screens/counter/');
-
 import React from 'react';
-import { shallow } from 'enzyme';
 
-describe('Counter', () => {
-    let sut;
-    let Counter;
-
-    beforeEach(() => {
-        //Counter = require('../screens/counter/index').default;
-        //sut = shallow(<Counter />);
-    });
-
+describe('Sample', () => {
     it('when rendered, should include three P components', () => {
-        // Arrange
-        // Act
-        // Assert
         expect('p'.length).toEqual(1);
     });
-    /*
-    it('when rendered, should have an inital state of 0', () => {
-        // Arrange
-        // Act
-        // Assert
-        expect(sut.find('p').first().text()).toEqual('0');
-    });
-
-    it('when rendered, should have an element for increment', () => {
-        // Arrange
-        // Act
-        // Assert
-        expect(sut.contains('+1')).toEqual(true);
-    });
-
-    it('when rendered, should have an element for decrement', () => {
-        // Arrange
-        // Act
-        // Assert
-        expect(sut.contains('-1')).toEqual(true);
-    });
-
-    it('when +1 clicked, should increment counter', () => {
-        // Arrange
-        // Act
-        sut.find('button').at(0).simulate('click');
-        // Assert
-        expect(sut.find('p').first().text()).toEqual('1');
-    });
-
-    it('when -1 clicked, should decrement counter', () => {
-        // Arrange
-        // Act
-        sut.find('button').at(1).simulate('click');
-        // Assert
-        expect(sut.find('p').first().text()).toEqual('-1');
-    });
-    */
 });
