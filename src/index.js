@@ -9,25 +9,5 @@ render(
     <Provider store={storeConfig()}>
         <App />
     </Provider>,
-    document.querySelector('form')
+    document.getElementById('main-page')
 )
-
-/*
-
-actions: actions
-reducers: reducers
-screens: containers (formulario, sidebar etc)
-shared: utiltarios, components dummy (label, inputs, rotas etc)
-
-*/
-
-
-
-/*
-
-actions: actions
-reducers: reducers
-screens: containers (formulario, sidebar etc)
-shared: utiltarios, components dummy (label, inputs, rotas etc)
-
-*/

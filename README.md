@@ -5,3 +5,5 @@
 Para executar o aplicativo execute os comandos:
 
 * npm install
+
+* npm run start

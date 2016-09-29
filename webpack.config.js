@@ -22,9 +22,6 @@ export default {
         filename: 'bundle.js'
     },
     module: {
-        preLoaders: [
-            //{test: /\.js$/, loader: 'eslint-loader'}
-        ],
         loaders: [
             {
                 test: /\.js$/,
@@ -41,14 +38,6 @@ export default {
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoErrorsPlugin(),
-        /*
-        new webpack.optimize.UglifyJsPlugin({
-        compressor: {
-        screw_ie8: true,
-        warnings: false
-            }
-        }),
-        */
         new webpack.DefinePlugin({
           "process.env": {
              NODE_ENV: JSON.stringify("production")
@@ -57,7 +46,7 @@ export default {
        new HtmlWebpackPlugin({
            inject: 'body',
            title: 'react-es6-redux-crud',
-           templateContent: '<form class="main-page"></form>'
+           template: './src/index.html',
        })
     ]
 };

@@ -37,7 +37,7 @@ export default class VehicleGrid extends Component {
     renderTbody(vehicles) {
         let vehiclesRow = [], _self = this;
 
-        vehicles.forEach(function (value, i) {
+        vehicles.slice(0, 5).forEach(function (value, i) {
             vehiclesRow.push(_self.renderVehicleRow(value))
         });
 
@@ -73,7 +73,7 @@ export default class VehicleGrid extends Component {
 
     render() {
         return (
-            <table className="table">
+            <table className="table grid">
                 {this.renderThead(this.props.vehicles)}
                 {this.renderTbody(this.props.vehicles)}
             </table>

@@ -1,10 +1,9 @@
 .body {
     margin: 15px auto;
-    width: 60%;
+    width: 100%;
     display: table;
 
     .content {
-        width: 95%;
         margin: 0 auto;
     }
 
@@ -12,7 +11,37 @@
         font-weight: bold;
     }
 
-    .button-normal {
+    .button-new-car {
         padding: 20px 35px;
+        margin-bottom: 15px;
+        background-color: $green;
+    }
+
+    .search-box {
+        float: right;
+        border-radius: 3px;
+
+        .button-zoom {
+            background-color: $white-light;
+            width: 40px !important;
+            height: 40px;
+
+            .zoom {
+                content: url("../imgs/zoom.png");
+                width: 12px;
+            }
+        }
+
+        .input {
+            width: 150px;
+            height: 40px;
+        }
+    }
+}
+
+.body {
+    @media (min-width: 800px) {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }

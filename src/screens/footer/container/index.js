@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux'
 import Footer from '../component';
 
-export default class FooterContainer extends Component {
+class FooterContainer extends Component {
     constructor(props) {
         super(props);
     }
