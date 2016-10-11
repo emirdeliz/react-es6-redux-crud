@@ -1,10 +1,8 @@
-import { combineReducers } from 'redux'
-import pagination from './pagination'
-import vehicle from './vehicle'
+import { combineReducers } from 'redux';
+import chart from './chart';
 
 const rootReducer = combineReducers({
-    vehicle,
-    pagination
-})
+    chart,
+});
 
-export default rootReducer
+export default rootReducer;

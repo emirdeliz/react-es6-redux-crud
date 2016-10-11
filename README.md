@@ -1,6 +1,6 @@
-# Aplicação desenvolvida para estudar testes do react/redux em es6
+# Aplicação desenvolvida para estudar graficos com react
 
-[![Build Status](https://travis-ci.org/emirdeliz/react-es6-redux-crud.svg?branch=master)](https://travis-ci.org/emirdeliz/react-es6-redux-crud)
+[![Build Status](https://travis-ci.org/emirdeliz/react-es6-chart.svg?branch=master)](https://travis-ci.org/emirdeliz/react-es6-chart)
 
 Para executar o aplicativo execute os comandos:
 

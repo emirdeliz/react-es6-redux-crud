@@ -1,24 +1,9 @@
-$white: #ffffff;
-$white-light: #f1f4f9;
-
-$blue: #80c8f9;
-$blue-light: #f8fafc;
-$blue-dark: #2687e9;
-
-$grey: #375d80;
-$grey-light: #c8d3de;
-$grey-darker: $grey;
-
-$green: #00c558;
-
+@import "variables.scss";
+@import "../../../node_modules/bulma/bulma.sass";
 @import "../../screens/body/assets/scss/style.scss";
-@import "../../screens/vehicle-grid/assets/scss/style.scss";
+@import "../../screens/chart/assets/scss/style.scss";
 @import "../../screens/header/assets/scss/style.scss";
 @import "../../screens/footer/assets/scss/style.scss";
-@import "../../shared/pagination/assets/scss/style.scss";
-@import "../../shared/checkbox/assets/scss/style.scss";
-
-@import "../../../node_modules/bulma/bulma.sass";
 
 @font-face {
     font-family: "proximanova-regular";
@@ -30,9 +15,11 @@ $green: #00c558;
     src: url("../webfonts/proximanovacond-regular.woff");
 }
 
+html,
 body {
+    height: 100%;
     font-family: proximanova-regular !important;
-    background-color: $white-light;
+    background-color: $white;
 }
 
 html * {

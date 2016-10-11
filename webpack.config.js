@@ -25,6 +25,7 @@ export default {
         loaders: [
             {
                 test: /\.js$/,
+                exclude: /(node_modules)/,
                 loader: 'babel-loader'
             }, {
                 test: /\.scss$/,
@@ -45,7 +46,7 @@ export default {
        }),
        new HtmlWebpackPlugin({
            inject: 'body',
-           title: 'react-es6-redux-crud',
+           title: 'Gráfico React',
            template: './src/index.html',
        })
     ]
