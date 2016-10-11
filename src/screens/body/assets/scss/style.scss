@@ -7,9 +7,35 @@
         margin: 0 auto;
     }
 
-    .title-chart {
-        text-align: center;
-        margin-top: 10px;
+    .button {
+        font-weight: bold;
+    }
+
+    .button-new-car {
+        padding: 20px 35px;
+        margin-bottom: 15px;
+        background-color: $green;
+    }
+
+    .search-box {
+        float: right;
+        border-radius: 3px;
+
+        .button-zoom {
+            background-color: $white-light;
+            width: 40px !important;
+            height: 40px;
+
+            .zoom {
+                content: url("../imgs/zoom.png");
+                width: 12px;
+            }
+        }
+
+        .input {
+            width: 150px;
+            height: 40px;
+        }
     }
 }
 

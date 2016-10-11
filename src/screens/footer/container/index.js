@@ -1,12 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux'
 import Footer from '../component';
 
 class FooterContainer extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
-            <Footer />
-        );
+            <Footer vehicles={this.props.vehicles} />
+        )
     }
 }
 
-export default FooterContainer;
+FooterContainer.propTypes = {
+    vehicles: PropTypes.array.isRequired
+}
+
+const mapStateToProps = (state) => {
+    return {
+        vehicles: state.vehicle
+    }
+}
+
+export default connect(
+    mapStateToProps
+)(FooterContainer)
